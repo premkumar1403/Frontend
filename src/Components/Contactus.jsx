@@ -29,7 +29,10 @@ const Contactus = () => {
     } else if (valid) {
       setissue({ name: "", email: "", message: "" });
       alert(`${data.name} Thank you providing feedback 🎉`);
-      await axios.post("https://backend-portfolio-peach.vercel.app/", data);
+      await axios.post(
+        "https://backend-portfolio-peach.vercel.app/feedback",
+        data
+      );
       setdata({ name: "", email: "", message: "" });
     }
   }
