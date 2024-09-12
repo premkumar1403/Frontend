@@ -1,0 +1,50 @@
+*{
+    font-family: 'Sanstia';
+}
+#head{
+    background-color: rgba(16, 15, 55, 1);
+    color: white;
+    cursor: pointer;
+    font-family: 'Sansita';
+    font-size: 40px;
+    font-weight: bolder;
+}
+#button{
+    background-color: rgba(182, 58, 65, 1);
+    color: white;
+    display: block;
+    margin: auto;
+}
+#project{
+    background-color: rgba(182, 58, 65, 1);
+    color: white;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+}
+#lists{
+    background-color: rgba(217, 217, 217, 1);
+    border-radius: 20px;
+}
+p{
+    font-family: "Train One";
+}
+#overlay{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 40px;
+    letter-spacing: 11px;
+    rotate: 5deg;
+    opacity: 0.03;
+    margin-top: -40px;
+    padding: 5px;
+
+}
+div a{
+    color: white;
+ text-decoration: none;
+}
