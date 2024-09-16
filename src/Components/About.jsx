@@ -1,12 +1,16 @@
 import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
-
+import { Link } from "react-router-dom";
 const About = () => {
   return (
     <div
       className="container"
-      style={{ backgroundColor: "rgba(16, 15, 55, 1)",color:"white",fontFamily:"PT Serif" }}
+      style={{
+        backgroundColor: "rgba(16, 15, 55, 1)",
+        color: "white",
+        fontFamily: "PT Serif",
+      }}
     >
       <Header />
       <div
@@ -78,12 +82,18 @@ const About = () => {
             alignItems: "center",
           }}
         >
-          <img src="LinkedIn.png" alt="" height={100} />
-          <img src="GitHub.png" alt="" height={100} />
-          <img src="insta.png" alt="" height={80} />
+          <Link to="https://www.instagram.com/__prem_005/">
+            <img src="LinkedIn.png" alt="" height={100} />
+          </Link>
+          <Link to="https://github.com/premkumar1403?tab=repositories">
+            <img src="GitHub.png" alt="" height={100} />
+          </Link>
+          <Link to="https://www.linkedin.com/in/premkumar-m12/">
+            <img src="insta.png" alt="" height={80} />
+          </Link>
         </div>
       </div>
-      <div className="row btn-primary" style={{ borderRadius: "15px" }}>
+      <div className="row" style={{ borderRadius: "15px" }}>
         <h3
           className="col-md-12 text-center"
           style={{
@@ -107,7 +117,7 @@ const About = () => {
           <h4>CGPA - 7.7</h4>
         </div>
         <div className="col-md-2">
-          <div style={{ height: "20px",color:"white" }}></div>
+          <div style={{ height: "20px", color: "white" }}></div>
         </div>
         <div className="col-md-5 text-center">
           <h4>BUILDERS ENGINEERING COLLEGE</h4>
@@ -237,7 +247,7 @@ const About = () => {
 
         <div className="col-md-2 offset-1">80%</div>
         <h5 className="col-md-3">Git/GitHub</h5>
-        <div className="col-md-6">
+        <div className="col-md-6 mb-5">
           <div class="progress text-left">
             <div
               class="progress-bar"
@@ -252,7 +262,7 @@ const About = () => {
             ></div>
           </div>
         </div>
-       <div className="col-md-2 offset-1">75%</div>
+        <div className="col-md-2 offset-1">75%</div>
       </div>
       <Footer />
     </div>

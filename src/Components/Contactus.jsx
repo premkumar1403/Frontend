@@ -38,13 +38,29 @@ const Contactus = () => {
   }
 
   return (
-    <div className="container">
+    <div
+      className="container"
+      style={{
+        backgroundColor: "rgba(16, 15, 55, 1)",
+        fontFamily: "PT Serif",
+      }}
+    >
       <Header />
-      <div className="row btn-info">
+      <div
+        className="row"
+        style={{
+          borderRadius: "15px",
+          backgroundColor: "rgba(182, 58, 65, 1)",
+          color: "white",
+          height: "70px",
+          marginTop: "5%",
+          paddingTop: "1.5%",
+        }}
+      >
         <h2 className="text-center">Contact us</h2>
       </div>
-      <div className="row" style={{ backgroundColor: "#DFE09A" }}>
-        <div className="col-md-6">
+      <div className="row" style={{ backgroundColor: "#DFE09A",marginTop:"5%",marginBottom:"5%" }}>
+        <div className="col-md-6 ">
           <h2 className="col-md-12">Get in Touch</h2>
           <h3 className="col-md-12">
             if you are interested in my work or want to provide feedback about
@@ -117,7 +133,7 @@ const Contactus = () => {
               >
                 {issue.message}
               </p>
-              <button className="offset-md-3 col-md-3 mt-4 text-center">
+              <button className="offset-md-3 col-md-3 mt-4 text-center" style={{marginBottom:"3%"}}>
                 Send
               </button>
             </form>

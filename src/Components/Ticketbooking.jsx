@@ -1,14 +1,22 @@
 import React from 'react'
-import Header from './Header';
-import Footer from './Footer';
+import { Link } from 'react-router-dom';
 import { IoMdArrowRoundBack } from 'react-icons/io';
+import Footer from './Footer';
 const Ticketbooking = () => {
   return (
-    <div className="container">
-      <Header />
+    <div
+      className="container"
+      style={{
+        backgroundColor: "rgba(16, 15, 55, 1)",
+        color: "white",
+        fontFamily: "PT Serif",
+      }}
+    >
       <div className="row">
         <h3 className="col-md-12">
-          <IoMdArrowRoundBack />
+          <Link to="/projects">
+            <IoMdArrowRoundBack style={{ marginTop: "-5px" }} />
+          </Link>
           &nbsp;Back
         </h3>
       </div>
@@ -31,13 +39,14 @@ const Ticketbooking = () => {
           <div className="col-md-12">
             <img src="figma.png" alt="figma" />
           </div>
-          <button className="btn btn-primary col-md-5 text-center">Demo</button>
-          <button className="btn btn-primary col-md-5 text-center">
-            GitHub
-          </button>
+          <Link to="https://www.figma.com/design/S7AScPafTpUEbsuvzbOuno/Portfolio?node-id=0-1&t=X3TWPfMIu6XJVZNJ-1">
+            <button className="btn btn-primary col-md-5 text-center">
+              Demo
+            </button>
+          </Link>
         </div>
       </div>
-      <div className="row" style={{ backgroundColor: "gray" }}>
+      <div className="row" style={{ backgroundColor: "gray",marginTop:"5%",marginBottom:"5%"}}>
         <h2 className="col-md-12">Main Features</h2>
         <h3 className="col-md-12">Clear layout:</h3>
         <h4 className="col-md-12 text-center">

@@ -11,19 +11,15 @@ import Ecommerce from './Components/Ecommerce'
 import Ticketbooking from './Components/Ticketbooking'
 import Filesharing from './Components/Filesharing'
 import Foodblog from './Components/Foodblog'
+
 function App() {
   return (
     <div>
       <Routes>
-        <Route
-          path="/"
-          element={
-              <Home />
-          }
-        />
-        <Route path="/about" element={<About />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/contactus" element={<Contactus />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/contactus" element={<Contactus />} />
         <Route path="/portfolio" element={<Portfolio />} />
         <Route path="/captcha" element={<Captcha />} />
         <Route path="/ecommerce" element={<Ecommerce />} />
