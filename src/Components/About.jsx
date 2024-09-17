@@ -2,18 +2,32 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
+
+const progressData = [
+  { label: "HTML, CSS & JavaScript", width: "75%", value: "80%" },
+  { label: "React, MongoDB", width: "70%", value: "70%" },
+  { label: "UI/UX", width: "70%", value: "70%" },
+  { label: "C programming", width: "80%", value: "80%" },
+  { label: "WordPress", width: "80%", value: "80%" },
+  { label: "Git/GitHub", width: "75%", value: "75%" },
+];
+
 const About = () => {
   return (
-    <div
+    <motion.div
       className="container"
       style={{
         backgroundColor: "rgba(16, 15, 55, 1)",
         color: "white",
         fontFamily: "PT Serif",
       }}
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 1, ease: "easeOut" }}
     >
       <Header />
-      <div
+      <motion.div
         style={{
           borderRadius: "15px",
           backgroundColor: "rgba(182, 58, 65, 1)",
@@ -22,11 +36,17 @@ const About = () => {
           height: "70px",
           paddingTop: "1.5%",
         }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5, duration: 0.5 }}
       >
         <h3 className="col-md-12 text-center">About</h3>
-      </div>
-      <div
+      </motion.div>
+      <motion.div
         style={{ backgroundColor: "rgba(217, 217, 217, 1)", marginTop: "5%" }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1, duration: 0.5 }}
       >
         <div className="row">
           <img
@@ -35,25 +55,43 @@ const About = () => {
             alt="premimage"
             height={350}
           />
-          <h4 className="col-md-8 text-center" style={{ marginTop: "5%" }}>
-            Hi i am PREMKUMAR , a third year computer science and engineering
-            student at builders engineering college with a passion for crafting
-            user centeric experiences.I specialize in UI/UX design,frontend
-            development and graphic design width expertise in
-            HTML,CSS,JavaScript,React,Node.js,Tailwind and c.
-            <button
-              className=" btn col-md-6 text-center mt-4 "
+          <h4
+            className="col-md-8 text-center"
+            style={{ marginTop: "5%", color: "black" }}
+          >
+            Hi I am{" "}
+            <span
+              style={{ color: "rgba(182, 58, 65, 1)", fontWeight: "bolder" }}
+            >
+              PREMKUMAR
+            </span>
+            , a third year computer science and engineering student at Builders
+            Engineering College with a passion for crafting user-centric
+            experiences. I specialize in UI/UX design, front-end development,
+            and graphic design with expertise in HTML, CSS, JavaScript, React,
+            Node.js, Tailwind, and C.
+            <motion.button
+              className="btn col-md-6 text-center mt-4"
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              transition={{ type: "spring", stiffness: 300 }}
               style={{
                 backgroundColor: "rgba(182, 58, 65, 1)",
                 color: "white",
               }}
             >
               Download Now
-            </button>
+            </motion.button>
           </h4>
         </div>
-      </div>
-      <div className="row" style={{ marginTop: "4%" }}>
+      </motion.div>
+      <motion.div
+        className="row"
+        style={{ marginTop: "4%" }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.5, duration: 0.5 }}
+      >
         <div
           className="col-md-8 g-2"
           style={{
@@ -92,8 +130,14 @@ const About = () => {
             <img src="insta.png" alt="" height={80} />
           </Link>
         </div>
-      </div>
-      <div className="row" style={{ borderRadius: "15px" }}>
+      </motion.div>
+      <motion.div
+        className="row"
+        style={{ borderRadius: "15px" }}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 2, duration: 0.5 }}
+      >
         <h3
           className="col-md-12 text-center"
           style={{
@@ -107,165 +151,125 @@ const About = () => {
         >
           Education
         </h3>
-      </div>
-      <div className="row mt-5">
-        <h3 className="col-md-12 text-left">BE</h3>
+      </motion.div>
+      <motion.div
+        className="row mt-5"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 2.5, duration: 0.5 }}
+      >
         <div className="col-md-5">
+          <h3>BE</h3>
           <h4>2021-2025</h4>
           <h4>Bachelor of Engineering</h4>
           <h4>Computer Science and Engineering</h4>
           <h4>CGPA - 7.7</h4>
         </div>
-        <div className="col-md-2">
-          <div style={{ height: "20px", color: "white" }}></div>
+        <div
+          className="col-md-2 text-center"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 3, duration: 0.5 }}
+        >
+          <div
+            style={{
+              height: "100%",
+              width: "2px",
+              backgroundColor: "white",
+              margin: "0 auto",
+            }}
+          ></div>
         </div>
         <div className="col-md-5 text-center">
           <h4>BUILDERS ENGINEERING COLLEGE</h4>
           <h4>Tiruppur, Tamilnadu</h4>
         </div>
-      </div>
-      <div className="row mt-5">
-        <h3 className="col-md-12 text-left">HSC</h3>
+      </motion.div>
+      <motion.div
+        className="row mt-5"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 3, duration: 0.5 }}
+      >
         <div className="col-md-5">
+          <h3>HSC</h3>
           <h4>2020-2021</h4>
-          <h4>Higher Seconday Certificate</h4>
+          <h4>Higher Secondary Certificate</h4>
           <h4>Computer Science and Engineering</h4>
           <h4>Percentage - 90%</h4>
         </div>
-        <div className="col-md-2">
-          <div style={{ height: "10px", width: "20px" }}></div>
+        <div className="col-md-2 text-center">
+          <div
+            style={{
+              height: "100%",
+              width: "2px",
+              backgroundColor: "white",
+              margin: "0 auto",
+            }}
+          ></div>
         </div>
         <div className="col-md-5 text-center">
           <h4>GMHSS (Govt Model Hrs School)</h4>
           <h4>Erode, Tamilnadu</h4>
         </div>
-      </div>
-      <div className="row mt-5">
-        <h3 className="col-md-12 text-left">SSLC</h3>
+      </motion.div>
+      <motion.div
+        className="row mt-5"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 3.5, duration: 0.5 }}
+      >
         <div className="col-md-5">
-          <h4>2018 - 2019</h4>
+          <h3>SSLC</h3>
+          <h4>2018-2019</h4>
           <h4>Secondary School Leaving Certificate</h4>
           <h4>Percentage - 89%</h4>
         </div>
-        <div className="col-md-2">
-          <div style={{ height: "10px", width: "20px" }}></div>
+        <div className="col-md-2 text-center">
+          <div
+            style={{
+              height: "100%",
+              width: "2px",
+              backgroundColor: "white",
+              margin: "0 auto",
+            }}
+          ></div>
         </div>
         <div className="col-md-5 text-center">
           <h4>GHSS (Govt Hrs School)</h4>
           <h4>Erode, Tamilnadu</h4>
         </div>
-      </div>
-      <div className="row mt-5 g-4 mb-5">
-        <h5 className="col-md-3">HTML,CSS&JavaScript</h5>
-        <div className="col-md-6">
-          <div class="progress text-left">
-            <div
-              class="progress-bar"
-              role="progressbar"
-              style={{
-                width: "75%",
-                ariaValuenow: "75",
-                ariaValuemin: "0",
-                ariaValuemax: "100",
-                backgroundColor: "rgba(71, 223, 233, 1)",
-              }}
-            ></div>
-          </div>
-        </div>
-
-        <div className="col-md-2 offset-1">80%</div>
-        <h5 className="col-md-3">React,MongoDB</h5>
-        <div className="col-md-6">
-          <div class="progress text-left">
-            <div
-              class="progress-bar"
-              role="progressbar"
-              style={{
-                width: "70%",
-                ariaValuenow: "70",
-                ariaValuemin: "0",
-                ariaValuemax: "100",
-                backgroundColor: "rgba(71, 223, 233, 1)",
-              }}
-            ></div>
-          </div>
-        </div>
-
-        <div className="col-md-2 offset-1">70%</div>
-        <h5 className="col-md-3">UI/UX</h5>
-        <div className="col-md-6">
-          <div class="progress text-left">
-            <div
-              class="progress-bar"
-              role="progressbar"
-              style={{
-                width: "70%",
-                ariaValuenow: "70",
-                ariaValuemin: "0",
-                ariaValuemax: "100",
-                backgroundColor: "rgba(71, 223, 233, 1)",
-              }}
-            ></div>
-          </div>
-        </div>
-
-        <div className="col-md-2 offset-1">70%</div>
-        <h5 className="col-md-3">C programming</h5>
-        <div className="col-md-6">
-          <div class="progress text-left">
-            <div
-              class="progress-bar"
-              role="progressbar"
-              style={{
-                width: "80%",
-                ariaValuenow: "80",
-                ariaValuemin: "0",
-                ariaValuemax: "100",
-                backgroundColor: "rgba(71, 223, 233, 1)",
-              }}
-            ></div>
-          </div>
-        </div>
-
-        <div className="col-md-2 offset-1">80%</div>
-        <h5 className="col-md-3">Wordpress</h5>
-        <div className="col-md-6">
-          <div class="progress text-left">
-            <div
-              class="progress-bar"
-              role="progressbar"
-              style={{
-                width: "80%",
-                ariaValuenow: "80",
-                ariaValuemin: "0",
-                ariaValuemax: "100",
-                backgroundColor: "rgba(71, 223, 233, 1)",
-              }}
-            ></div>
-          </div>
-        </div>
-
-        <div className="col-md-2 offset-1">80%</div>
-        <h5 className="col-md-3">Git/GitHub</h5>
-        <div className="col-md-6 mb-5">
-          <div class="progress text-left">
-            <div
-              class="progress-bar"
-              role="progressbar"
-              style={{
-                width: "75%",
-                ariaValuenow: "75",
-                ariaValuemin: "0",
-                ariaValuemax: "100",
-                backgroundColor: "rgba(71, 223, 233, 1)",
-              }}
-            ></div>
-          </div>
-        </div>
-        <div className="col-md-2 offset-1">75%</div>
-      </div>
+      </motion.div>
+      <motion.div
+        className="row mt-5 g-4 mb-5"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 4, duration: 0.5 }}
+      >
+        {progressData.map((item, index) => (
+          <React.Fragment key={index}>
+            <h5 className="col-md-3">{item.label}</h5>
+            <div className="col-md-6">
+              <div className="progress text-left">
+                <motion.div
+                  className="progress-bar"
+                  role="progressbar"
+                  initial={{ width: 0 }}
+                  animate={{ width: item.width }}
+                  transition={{ duration: 7, ease: "easeInOut" }}
+                  style={{
+                    backgroundColor: "rgba(71, 223, 233, 1)",
+                    height: "60px",
+                  }}
+                ></motion.div>
+              </div>
+            </div>
+            <div className="col-md-2 offset-1">{item.value}</div>
+          </React.Fragment>
+        ))}
+      </motion.div>
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 

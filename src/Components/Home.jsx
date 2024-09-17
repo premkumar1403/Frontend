@@ -68,9 +68,9 @@ const Home = () => {
             <motion.div
               className="position-relative"
               style={{ top: "-35%" }}
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 2 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.5, duration: 2 }}
             >
               <img src="circle.png" alt="circle" height={100} />
             </motion.div>
@@ -79,7 +79,12 @@ const Home = () => {
             className="row d-flex align-items-center"
             style={{ marginTop: "-40%" }}
           >
-            <div className="col-md-7 text-center">
+            <motion.div
+              className="col-md-7 text-center"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1, duration: 0.5 }}
+            >
               <h3 style={{ textDecoration: "underline" }}>Hey I'm</h3>
               <motion.h1
                 style={{
@@ -97,18 +102,24 @@ const Home = () => {
               </h5>
               <img src="GitHub.png" alt="github" />
               <img src="LinkedIn.png" alt="linkedin" />
-            </div>
+            </motion.div>
             <motion.div
               className="col-md-5"
-              initial={{ opacity: 0, scale: 0.5 }}
-              animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 2 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.5, duration: 3 }}
             >
               <img src="premphoto.png" alt="prem" />
             </motion.div>
           </div>
         </div>
-        <div className="row text-center" style={{ marginTop: "5%" }}>
+        <motion.div
+          className="row text-center"
+          style={{ marginTop: "5%" }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 2, duration: 0.5 }}
+        >
           <h1 className="col-md-12">About</h1>
           <h3 className="col-md-12">
             Hi i am PREMKUMAR , a third year computer science and engineering
@@ -126,8 +137,14 @@ const Home = () => {
               More..
             </motion.button>
           </Link>
-        </div>
-        <div id="project" style={{ marginTop: "5%" }}>
+        </motion.div>
+        <motion.div
+          id="project"
+          style={{ marginTop: "5%" }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 2.5, duration: 0.5 }}
+        >
           <h3>Recent Projects</h3>
           <h3>
             See all
@@ -135,10 +152,13 @@ const Home = () => {
               <IoIosArrowForward style={{ marginTop: "-2px" }} />
             </Link>
           </h3>
-        </div>
-        <div
+        </motion.div>
+        <motion.div
           className="row d-flex justify-content-center"
           style={{ marginTop: "5%", marginBottom: "5%" }}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 3, duration: 0.5 }}
         >
           <motion.div
             className="col-md-3 text-center"
@@ -219,7 +239,7 @@ const Home = () => {
               <img src="JavaScript.png" alt="js" />
             </div>
           </motion.div>
-        </div>
+        </motion.div>
       </div>
       <Footer />
     </div>
