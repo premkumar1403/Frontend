@@ -3,7 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-
+import axios from 'axios'
 const progressData = [
   { label: "HTML, CSS & JavaScript", width: "75%", value: "80%" },
   { label: "React, MongoDB", width: "70%", value: "70%" },
@@ -14,6 +14,9 @@ const progressData = [
 ];
 
 const About = () => {
+  async function download() {
+    await axios.get("https://backend-portfolio-peach.vercel.app/download")
+  }
   return (
     <motion.div
       className="container"
@@ -79,6 +82,7 @@ const About = () => {
                 backgroundColor: "rgba(182, 58, 65, 1)",
                 color: "white",
               }}
+              onClick={download}
             >
               Download Now
             </motion.button>
