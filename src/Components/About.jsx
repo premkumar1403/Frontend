@@ -14,7 +14,8 @@ const progressData = [
 ];
 
 const About = () => {
-  async function download() {
+  async function download(e) {
+    e.preventDefault();
     await axios.get("https://backend-portfolio-peach.vercel.app/download")
   }
   return (
