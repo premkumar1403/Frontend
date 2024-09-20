@@ -3,7 +3,7 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import axios from 'axios'
+import axios from "axios";
 const progressData = [
   { label: "HTML, CSS & JavaScript", width: "75%", value: "80%" },
   { label: "React, MongoDB", width: "70%", value: "70%" },
@@ -135,7 +135,7 @@ const About = () => {
           <img src="Nodejs.png" alt="node" height={70} />
           <img src="Tailwind CSS.png" alt="tailwind" height={70} />
           <img src="React Native.png" alt="react" height={70} />
-          <img src="MongoDb.png" alt="mongodb" height={70} />
+          <img src="MongoDB.png" alt="mongodb" height={70} />
           <img src="C Programming.png" alt="c language" height={70} />
         </div>
         <div

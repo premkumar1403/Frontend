@@ -59,7 +59,7 @@ const Portfolio = () => {
           <h4 className="mt-4">Wordpress</h4>
           <p style={{ fontFamily: "sans-serif" }}>
             It’s a place to where visitors can discover new dishes learn cooking
-            techniques and find impression for other next meal.{" "}
+            techniques and find impression for other next meal.
           </p>
           <h3 className="mt-4">Techskills</h3>
           <div className="d-flex flex-wrap mt-4 ">
