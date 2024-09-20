@@ -14,10 +14,33 @@ const progressData = [
 ];
 
 const About = () => {
-  async function download(e) {
+  async function data(e) {
     e.preventDefault();
-    await axios.get("https://backend-portfolio-peach.vercel.app/download")
+    try {
+      const response = await axios.get("http://localhost:4000/resumedata", {
+        responseType: "blob", // Important for file downloads
+      });
+
+      // Create a URL for the downloaded file
+      const url = window.URL.createObjectURL(new Blob([response.data]));
+
+      // Create a link element
+      const link = document.createElement("a");
+      link.href = url;
+      link.setAttribute("download", "prem_resume.pdf"); // Specify the file name
+      document.body.appendChild(link);
+
+      // Programmatically click the link to trigger the download
+      link.click();
+
+      // Cleanup
+      link.parentNode.removeChild(link);
+      window.URL.revokeObjectURL(url);
+    } catch (error) {
+      console.error("Error downloading the file:", error);
+    }
   }
+
   return (
     <motion.div
       className="container"
@@ -75,6 +98,7 @@ const About = () => {
             and graphic design with expertise in HTML, CSS, JavaScript, React,
             Node.js, Tailwind, and C.
             <motion.button
+              onClick={data}
               className="btn col-md-6 text-center mt-4"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
@@ -83,7 +107,6 @@ const About = () => {
                 backgroundColor: "rgba(182, 58, 65, 1)",
                 color: "white",
               }}
-              onClick={download}
             >
               Download Now
             </motion.button>
