@@ -17,12 +17,9 @@ const About = () => {
   async function data(e) {
     e.preventDefault();
     try {
-      const response = await axios.get(
-        "https://backend-portfolio-three-gold.vercel.app/resumedata",
-        {
-          responseType: "blob", // Important for file downloads
-        }
-      );
+      const response = await axios.get("https://backend-portfolio-three-gold.vercel.app/resumedata", {
+        responseType: "blob", // Important for file downloads
+      });
 
       // Create a URL for the downloaded file
       const url = URL.createObjectURL(new Blob([response.data]));
