@@ -22,7 +22,7 @@ const About = () => {
       });
 
       // Create a URL for the downloaded file
-      const url = window.URL.createObjectURL(new Blob([response.data]));
+      const url = URL.createObjectURL(new Blob([response.data]));
 
       // Create a link element
       const link = document.createElement("a");
