@@ -34,7 +34,7 @@ const Contactus = () => {
       setissue({ name: "", email: "", message: "" });
       alert(`${data.name}, thank you for providing feedback 🎉`);
       await axios.post(
-        "https://backend-portfolio-three-gold.vercel.app//feedback",
+        "https://backend-portfolio-three-gold.vercel.app/feedback",
         data
       );
       setdata({ name: "", email: "", message: "" });
