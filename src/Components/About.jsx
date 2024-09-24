@@ -24,7 +24,7 @@ const About = () => {
         }
       );
 
-      // Create a URL for the downloaded file
+      // Create a URL for the downloaded files
       const url = URL.createObjectURL(new Blob([response.data]));
 
       // Create a link element
