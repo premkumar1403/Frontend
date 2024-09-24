@@ -33,7 +33,10 @@ const Contactus = () => {
     } else if (valid) {
       setissue({ name: "", email: "", message: "" });
       alert(`${data.name}, thank you for providing feedback 🎉`);
-      await axios.post("http://localhost:4000/feedback", data);
+      await axios.post(
+        "https://backend-portfolio-three-gold.vercel.app//feedback",
+        data
+      );
       setdata({ name: "", email: "", message: "" });
     }
   }
