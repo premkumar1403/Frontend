@@ -43,7 +43,7 @@ const Projects = () => {
               <img src="figma.png" alt="figma" />
               <img src="Html 5.png" alt="html" />
               <img src="Tailwind CSS.png" alt="tailwindcss" />
-              <img src="javaScript.png" alt="js" />
+              <img src="JavaScript.png" alt="js" />
             </div>
           </motion.div>
           <motion.div
@@ -69,7 +69,7 @@ const Projects = () => {
             <div className="col-md-12">
               <img src="Html 5.png" alt="html" />
               <img src="CSS3.png" alt="css" />
-              <img src="javaScript.png" alt="js" />
+              <img src="JavaScript.png" alt="js" />
             </div>
           </motion.div>
           <motion.div
@@ -95,7 +95,7 @@ const Projects = () => {
             <div className="col-md-12">
               <img src="Html 5.png" alt="html" />
               <img src="CSS3.png" alt="css" />
-              <img src="javaScript.png" alt="js" />
+              <img src="JavaScript.png" alt="js" />
             </div>
           </motion.div>
         </div>
