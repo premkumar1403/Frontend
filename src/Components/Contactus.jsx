@@ -14,7 +14,6 @@ const Contactus = () => {
     email: "",
     message: "",
   });
-  
 
   const email_regx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   let valid = true;
@@ -40,9 +39,6 @@ const Contactus = () => {
       setdata({ name: "", email: "", message: "" });
     }
   }
-
-
- 
 
   return (
     <div
