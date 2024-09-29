@@ -20,7 +20,7 @@ const About = () => {
       const response = await axios.get(
         "https://backend-portfolio-three-gold.vercel.app/resumedata",
         {
-          responseType: "blob", 
+          responseType: "blob",
         }
       );
 
@@ -89,17 +89,19 @@ const About = () => {
             className="col-md-8 text-center"
             style={{ marginTop: "5%", color: "black" }}
           >
-            Hi I am{" "}
+            Hi I am
             <span
               style={{ color: "rgba(182, 58, 65, 1)", fontWeight: "bolder" }}
             >
               PREMKUMAR
             </span>
-            , a third year computer science and engineering student at Builders
-            Engineering College with a passion for crafting user-centric
-            experiences. I specialize in UI/UX design, front-end development,
-            and graphic design with expertise in HTML, CSS, JavaScript, React,
-            Node.js, Tailwind, and C.
+            currently pursuing a Bachelor of Engineering degree in Computer
+            Science at Builders Engineering College. Passion for full-stack
+            development, particularly within the MERN stack. Throughout my
+            studies, I have worked on various projects in web development,
+            honing my skills and expanding my knowledge in this dynamic field. I
+            am eager to leverage my technical expertise and creativity to build
+            innovative web applications.
             <motion.button
               onClick={data}
               className="btn col-md-6 text-center mt-4"
