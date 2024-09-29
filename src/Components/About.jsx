@@ -20,7 +20,7 @@ const About = () => {
       const response = await axios.get(
         "https://backend-portfolio-three-gold.vercel.app/resumedata",
         {
-          responseType: "blob", // Important for file downloads
+          responseType: "blob", 
         }
       );
 

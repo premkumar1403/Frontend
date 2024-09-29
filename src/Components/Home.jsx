@@ -62,8 +62,8 @@ const Home = () => {
             <p>MONGODB</p>
           </motion.div>
           <div
-            className="row col-md-4 text-left"
-            style={{ marginTop: "-35%", position: "absolute" }}
+            className="row col-sm-3 col-md-4  text-left"
+            style={{ position: "absolute" ,marginTop:'-35%'}}
           >
             <motion.div
               className="position-relative"
@@ -72,7 +72,7 @@ const Home = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 2 }}
             >
-              <img src="circle.png" alt="circle" height={100} />
+              <img src="circle.png" alt="circle" height={100}/>
             </motion.div>
           </div>
           <div

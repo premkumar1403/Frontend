@@ -7,12 +7,12 @@ const Footer = () => {
   return (
     <div className="container" id="head">
       <div className="text-center">
-        <h1 style={{ fontFamily: "bowlby One SC" }}>PREMKUMAR</h1>
-        <h4>
+        <h3 style={{ fontFamily: "bowlby One SC" }}>PREMKUMAR</h3>
+        <h5>
           I’m web developer and designer based in india. I have a very deep
           passion to design stuff this website is made with the lot of love and
           passion.
-        </h4>
+        </h5>
         <Link to="https://github.com/premkumar1403?tab=repositories">
           <img src="GitHub.png" alt="github" />
         </Link>
@@ -22,8 +22,8 @@ const Footer = () => {
         <Link to="https://www.instagram.com/__prem_005/">
           <img src="insta.png" alt="instagram" />
         </Link>
-        <h5>Portfolio v2.0</h5>
-        <h4>&copy;&nbsp;&nbsp;&nbsp;&nbsp;{data}</h4>
+        <h6>Portfolio v2.0</h6>
+        <h6>&copy;&nbsp;&nbsp;&nbsp;&nbsp;{data}</h6>
       </div>
     </div>
   );

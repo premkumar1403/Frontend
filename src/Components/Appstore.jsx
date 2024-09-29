@@ -3,8 +3,7 @@ import { Link } from "react-router-dom";
 import { IoMdArrowRoundBack } from "react-icons/io";
 import Footer from "./Footer";
 import { motion } from "framer-motion";
-
-const Portfolio = () => {
+const Appstore = () => {
   return (
     <div
       className="container"
@@ -43,10 +42,10 @@ const Portfolio = () => {
           transition={{ delay: 0.5, duration: 0.5 }}
         >
           <img
-            src="aboutprem.png"
-            alt="portfolio"
+            src="appstore.png"
+            alt="appstore"
             className="img-fluid"
-            style={{ height: "50vh" }}
+            style={{ height: "55vh" }}
           />
         </motion.div>
         <motion.div
@@ -55,39 +54,43 @@ const Portfolio = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 1, duration: 0.5 }}
         >
-          <h3 className="mt-4">Portfolio</h3>
+          <h3 className="mt-2">App Store</h3>
           <h4 className="mt-4">MERN</h4>
           <p style={{ fontFamily: "sans-serif" }}>
-            Portfolio website to showcase my skills and projects. The frontend
-            is built using React, providing an interactive and responsive user
-            experience. The backend is powered by Express, ensuring robust
-            server functionality. To manage data efficiently, I utilized MongoDB
-            Atlas as my database solution.
+            This project involves the development of an app store application
+            featuring robust search and category functionalities. Built using
+            React for the frontend, along with MongoDB and Express for the
+            backend, the application allows users to efficiently search for and
+            browse applications based on their preferences. A dedicated server
+            facilitates seamless communication between the client and the
+            database, ensuring quick access to relevant app data. The intuitive
+            design enhances the user experience, making it easy to discover and
+            explore various applications.
           </p>
-          <h3 className="mt-4">Techskills</h3>
-          <div className="d-flex flex-wrap mt-4 ">
-            <img
-              src="MongoDB.png"
-              alt="databse"
-              className="tech-icon"
-              height={60}
-            />
-            <img
-              src="express.png"
-              alt="express"
-              className="tech-icon"
-              height={60}
-            />
+          <h3 className="mt-2">Techskills</h3>
+          <div className="d-flex flex-wrap mt-4">
             <img
               src="reacticon.png"
               alt="react"
               className="tech-icon"
+              height={50}
+            />
+            <img
+              src="express.png"
+              alt="ecpress"
+              className="tech-icon"
+              height={50}
+            />
+            <img src="MongoDB.png" alt="DB" className="tech-icon" height={50} />
+            <img
+              src="Nodejs.png"
+              alt="node"
+              className="tech-icon"
               height={60}
             />
-            <img src="Nodejs.png" alt="js" className="tech-icon" height={60} />
           </div>
-          <div className="d-flex flex-wrap mt-4">
-            <Link to="https://portfolio-prem-site.vercel.app/">
+          <div className="d-flex flex-wrap mt-2">
+            <Link to="https://frontend-appstore.vercel.app/">
               <motion.button
                 className="btn me-3"
                 whileHover={{ scale: 1.05 }}
@@ -103,7 +106,7 @@ const Portfolio = () => {
                 Demo
               </motion.button>
             </Link>
-            <Link to="https://github.com/premkumar1403/Frontend.git">
+            <Link to="https://github.com/premkumar1403/Frontend-appstore.git">
               <motion.button
                 className="btn"
                 style={{
@@ -132,41 +135,31 @@ const Portfolio = () => {
       >
         <div className="col-md-12">
           <h2 className="mb-3">Main Features</h2>
-          <h3 className="mb-2">Dynamic Frontend:</h3>
+          <h3 className="mt-3 mb-2">Search Functionality: </h3>
           <h4>
-            Built with React, leveraging its component-based architecture to
-            create reusable UI elements.Implements features like animations,
-            transitions, and state management to enhance user engagement and
-            provide a smooth navigation experience.
+            Users can easily search for apps by keywords, making it simple to
+            find specific applications.
           </h4>
-          <h3 className="mt-3 mb-2">Robust Backend:</h3>
+          <h3 className="mb-2">Category Browsing:</h3>
           <h4>
-            Express.js for handling server-side logic, routing, and middleware
-            functions.Creates RESTful APIs to facilitate communication between
-            the frontend and backend, allowing for efficient data retrieval and
-            submission.
+            Explore apps organized by categories, allowing users to discover new
+            applications based on their interests.
           </h4>
-          <h3 className="mt-3 mb-2">Data Management:</h3>
+          <h3 className="mt-3 mb-2">Dynamic Data Retrieval: </h3>
           <h4>
-            Integrates with MongoDB Atlas as a cloud-based database solution for
-            scalable and secure data storage.Defines a clear data schema to
-            organize and manage user submissions and project information
-            effectively.
+            A dedicated server built with Express enables efficient
+            communication with the MongoDB database for real-time app data
+            retrieval.
           </h4>
-          <h3 className="mt-3 mb-2">Downloadable Resume:</h3>
+          <h3 className="mt-3 mb-2">Responsive Design:</h3>
           <h4>
-            Provides a straightforward download button, allowing users to
-            quickly save a copy of your resume for offline viewing. Regularly
-            updates the resume file to reflect the most current information and
-            skills.
+            Optimized for various devices, ensuring a seamless experience on
+            desktops, tablets, and smartphones.
           </h4>
-          <h3 className="mt-3 mb-2"> Contact Form:</h3>
+          <h3 className="mt-3 mb-2">User-Friendly Interface:</h3>
           <h4>
-            Includes fields for name, email, message, and any other relevant
-            details to capture user inquiries effectively. Implements
-            client-side validation to ensure all required fields are filled out
-            correctly before submission,Automatically stores user submissions in
-            MongoDB Atlas for easy access and follow-up,to manage inquiries.
+            An intuitive and visually appealing design that enhances the overall
+            user experience.
           </h4>
         </div>
       </motion.div>
@@ -176,4 +169,4 @@ const Portfolio = () => {
   );
 };
 
-export default Portfolio;
+export default Appstore;
