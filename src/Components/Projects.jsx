@@ -246,7 +246,7 @@ const Projects = () => {
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
           >
-            <Link to="/ecommerce">
+            <Link to="/appstore">
               <motion.img
                 src="appstore.png"
                 alt="appstore"
