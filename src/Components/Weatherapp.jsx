@@ -41,7 +41,12 @@ const Weatherapp = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.5, duration: 0.5 }}
         >
-          <img src="weatherapp.png" alt="portfolio" className="img-fluid" />
+          <img
+            src="weatherapp.png"
+            alt="portfolio"
+            className="img-fluid"
+            style={{ borderRadius: "20px" }}
+          />
         </motion.div>
         <motion.div
           className="col-md-12 col-lg-6"

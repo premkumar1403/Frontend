@@ -45,7 +45,7 @@ const Appstore = () => {
             src="appstore.png"
             alt="appstore"
             className="img-fluid"
-            style={{ height: "55vh" }}
+            style={{ height: "55vh",borderRadius:"20px" }}
           />
         </motion.div>
         <motion.div

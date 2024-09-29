@@ -45,7 +45,8 @@ const Xox = () => {
             src="xox.png"
             alt="portfolio"
             className="img-fluid"
-            width={500}
+                      width={500}
+                      style={{borderRadius:"20px"}}
           />
         </motion.div>
         <motion.div

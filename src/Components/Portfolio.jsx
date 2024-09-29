@@ -46,7 +46,7 @@ const Portfolio = () => {
             src="aboutprem.png"
             alt="portfolio"
             className="img-fluid"
-            style={{ height: "50vh" }}
+            style={{ height: "50vh",borderRadius:'20px' }}
           />
         </motion.div>
         <motion.div
