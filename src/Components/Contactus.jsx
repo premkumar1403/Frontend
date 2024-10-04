@@ -1,9 +1,10 @@
-import React, { useState } from "react";
+import React, { useState,useRef } from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import axios from "axios";
 import { motion } from "framer-motion";
 const Contactus = () => {
+  const display_modal = useRef();
   const [data, setdata] = useState({
     name: "",
     email: "",
@@ -14,7 +15,13 @@ const Contactus = () => {
     email: "",
     message: "",
   });
-
+  function displaymodal() {
+    display_modal.current.showModal()
+  }
+  function undisplaymodal() {
+    setdata({ name: "", email: "", message: "" });
+   return display_modal.current.close();
+   }
   const email_regx = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
   let valid = true;
 
@@ -31,13 +38,11 @@ const Contactus = () => {
       setissue({ message: "Please provide your feedback" });
     } else if (valid) {
       setissue({ name: "", email: "", message: "" });
-      alert(`${data.name}, thank you for providing feedback 🎉`);
-      await axios.post(
-        "https://backend-portfolio-three-gold.vercel.app/feedback",
+      await axios.post("https://backend-portfolio-three-gold.vercel.app/feedback",
         data
       );
-      setdata({ name: "", email: "", message: "" });
-    }
+      displaymodal()
+      }
   }
 
   return (
@@ -47,7 +52,7 @@ const Contactus = () => {
         backgroundColor: "rgba(16, 15, 55, 1)",
         fontFamily: "PT Serif",
       }}
-    >
+    >   
       <Header />
       <motion.div
         className="row"
@@ -113,7 +118,7 @@ const Contactus = () => {
             <input
               id="email"
               className="form-control"
-              type="text"
+              type="email"
               value={data.email}
               placeholder="Enter your Email"
               onChange={(e) => setdata({ ...data, email: e.target.value })}
@@ -136,8 +141,11 @@ const Contactus = () => {
             <p className="text-danger" style={{ fontFamily: "sans-serif" }}>
               {issue.message}
             </p>
-
-            <motion.button
+            <dialog ref={display_modal} style={{maxHeight:"40vh",maxWidth:"33vw",borderRadius:'30px'}}>
+              <h1>{data.name},thank you for submitting your feedback💕🎉</h1>
+              <button onClick={undisplaymodal} style={{borderRadius:"5px"}}>Ok</button>
+            </dialog>
+            <motion.button 
               type="submit"
               className="btn mt-4 mb-4"
               whileHover={{ scale: 1.1 }}
