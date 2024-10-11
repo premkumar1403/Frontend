@@ -170,7 +170,7 @@ const Home = () => {
               <motion.img
                 src="project1.png"
                 alt="project1"
-                style={{ height: "30vh", width: "60vw" }}
+                style={{ height: "25vh", width: "60vw" }}
                 className="img-fluid mt-2"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
