@@ -23,7 +23,7 @@ const Projects = () => {
           style={{ marginTop: "5%", marginBottom: "5%" }}
         >
           <motion.div
-            className="col-8 mt-5 col-sm-7 col-md-5 col-lg-3 text-center"
+            className="col-10 mt-5 col-sm-7 col-md-5 col-lg-3 text-center"
             id="lists"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.5 }}
