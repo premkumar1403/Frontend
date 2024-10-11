@@ -62,8 +62,8 @@ const Home = () => {
             <p>MONGODB</p>
           </motion.div>
           <div
-            className="row col-sm-3 col-md-4  text-left"
-            style={{ position: "absolute" ,marginTop:'-45%'}}
+            className="row col-10 text-left col-sm-3 col-md-4 col-lg-5"
+            style={{ position: "absolute", marginTop: "-45%" }}
           >
             <motion.div
               className="position-relative"
@@ -72,15 +72,15 @@ const Home = () => {
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 2 }}
             >
-              <img src="circle.png" alt="circle" height={100}/>
+              <img src="circle.png" alt="circle" style={{heigth:"10vh",width:"20vw"}} />
             </motion.div>
           </div>
           <div
-            className="row d-flex align-items-center"
+            className="d-lg-flex col-lg-6 align-items-lg-center"
             style={{ marginTop: "-40%" }}
           >
             <motion.div
-              className="col-md-7 text-center"
+              className="col-8 text-center col-sm-9 offset-sm-2 col-md-7 m-lg-3"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 0.5 }}
@@ -104,12 +104,12 @@ const Home = () => {
               <img src="LinkedIn.png" alt="linkedin" />
             </motion.div>
             <motion.div
-              className="col-md-5"
+              className="col-8 offset-2 col-sm-6 offset-sm-3 col-md-5 offset-lg-8"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1.5, duration: 3 }}
             >
-              <img src="premphoto.png" alt="prem" />
+              <img src="premphoto.png" alt="prem" style={{heigth:"30vh",width:"30vw"}}/>
             </motion.div>
           </div>
         </div>
@@ -161,7 +161,7 @@ const Home = () => {
           transition={{ delay: 3, duration: 0.5 }}
         >
           <motion.div
-            className="col-md-3 text-center"
+            className="col-8 mt-5 col-sm-8 col-md-5 col-lg-3 col-xl-4 text-center"
             id="lists"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
@@ -170,9 +170,8 @@ const Home = () => {
               <motion.img
                 src="project1.png"
                 alt="project1"
-                height={300}
-                width={300}
-                className="img-fluid"
+                style={{ height: "30vh", width: "60vw" }}
+                className="img-fluid mt-2"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
@@ -188,7 +187,7 @@ const Home = () => {
             </div>
           </motion.div>
           <motion.div
-            className="offset-1 col-md-3 text-center"
+            className="col-8 mt-5 col-sm-8  offset-md-1 col-md-5 col-lg-3 col-xl-4 text-center"
             id="lists"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
@@ -197,9 +196,8 @@ const Home = () => {
               <motion.img
                 src="captcha.png"
                 alt="project1"
-                height={300}
-                width={300}
-                className="img-fluid"
+                style={{ heigth: "25vh", width: "60vw" }}
+                className="img-fluid mt-2"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
@@ -214,7 +212,7 @@ const Home = () => {
             </div>
           </motion.div>
           <motion.div
-            className="offset-1 col-md-3 offset-1 text-center"
+            className="col-8 col-sm-8 mt-5 offset-md-1 col-md-5 col-lg-3 col-xl-4 text-center"
             id="lists"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
@@ -223,9 +221,8 @@ const Home = () => {
               <motion.img
                 src="ecommerce.png"
                 alt="project1"
-                height={300}
-                width={300}
-                className="img-fluid"
+                style={{ heigth: "25vh", width: "60vw" }}
+                className="img-fluid mt-2"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}

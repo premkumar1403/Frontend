@@ -32,7 +32,7 @@ const Projects = () => {
               <motion.img
                 src="/project1.png"
                 alt="project1"
-                className="img-fluid"
+                className="img-fluid mt-2"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
@@ -63,7 +63,7 @@ const Projects = () => {
               <motion.img
                 src="captcha.png"
                 alt="project1"
-                className="img-fluid"
+                className="img-fluid mt-2"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
@@ -89,7 +89,7 @@ const Projects = () => {
                 src="ecommerce.png"
                 alt="project1"
                 style={{ height: "25vh", width: "60vw" }}
-                className="img-fluid"
+                className="img-fluid mt-2"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}  
@@ -115,7 +115,7 @@ const Projects = () => {
                 src="/weatherapp.png"
                 alt="weatherapp"
                 style={{ height: "25vh", width: "60vw", borderRadius: "20px" }}
-                className="img-fluid"
+                className="img-fluid mt-2"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
@@ -141,7 +141,7 @@ const Projects = () => {
                 height={300}
                 width={300}
                 style={{ height: "25vh", width: "60vw", borderRadius: "20px" }}
-                className="img-fluid"
+                className="img-fluid mt-2"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
@@ -166,7 +166,7 @@ const Projects = () => {
                 src="appstore.png"
                 alt="appstore"
                 style={{ height: "25vh", width: "60vw", borderRadius: "20px" }}
-                className="img-fluid"
+                className="img-fluid mt-2"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
@@ -198,7 +198,7 @@ const Projects = () => {
                 src="ticketbooking.png"
                 alt="weatherapp"
                 style={{ height: "25vh", width: "60vw", borderRadius: "20px" }}
-                className="img-fluid"
+                className="img-fluid mt-2"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
@@ -223,7 +223,7 @@ const Projects = () => {
                 height={300}
                 width={300}
                 style={{ height: "25vh", width: "60vw", borderRadius: "20px" }}
-                className="img-fluid"
+                className="img-fluid mt-2"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
@@ -246,7 +246,7 @@ const Projects = () => {
                 src="foodblog.png"
                 alt="foodblog"
                 style={{ height: "25vh", width: "60vw", borderRadius: "20px" }}
-                className="img-fluid"
+                className="img-fluid mt-2"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
