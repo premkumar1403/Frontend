@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 
 const Projects = () => {
   return (
@@ -23,7 +23,7 @@ const Projects = () => {
           style={{ marginTop: "5%", marginBottom: "5%" }}
         >
           <motion.div
-            className="col-10 mt-5 col-sm-7 col-md-5 col-lg-3 text-center"
+            className="col-8 mt-5 col-sm-7 col-md-5 col-lg-3 text-center"
             id="lists"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.5 }}
@@ -92,7 +92,7 @@ const Projects = () => {
                 className="img-fluid mt-2"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}  
+                transition={{ duration: 0.5 }}
               />
             </Link>
             <h3>E-commerce</h3>
