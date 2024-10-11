@@ -8,6 +8,8 @@
     font-family: 'Sansita';
     font-size: 40px;
     font-weight: bolder;
+    position: sticky;
+    top: 0;
 }
 #button{
     background-color: rgba(182, 58, 65, 1);

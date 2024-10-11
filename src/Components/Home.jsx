@@ -63,7 +63,7 @@ const Home = () => {
           </motion.div>
           <div
             className="row col-sm-3 col-md-4  text-left"
-            style={{ position: "absolute" ,marginTop:'-35%'}}
+            style={{ position: "absolute" ,marginTop:'-45%'}}
           >
             <motion.div
               className="position-relative"

@@ -23,7 +23,7 @@ const Projects = () => {
           style={{ marginTop: "5%", marginBottom: "5%" }}
         >
           <motion.div
-            className="col-md-3 text-center"
+            className="col-8 mt-5 col-sm-7 col-md-5 col-lg-3 text-center"
             id="lists"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.5 }}
@@ -32,12 +32,11 @@ const Projects = () => {
               <motion.img
                 src="/project1.png"
                 alt="project1"
-                height={300}
-                width={300}
                 className="img-fluid"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
+                style={{ height: "25vh", width: "60vw" }}
               />
             </Link>
             <h3>Portfolio</h3>
@@ -55,7 +54,7 @@ const Projects = () => {
             </div>
           </motion.div>
           <motion.div
-            className="offset-1 col-md-3 text-center"
+            className="col-8 mt-5 offset-md-1 col-md-5 col-sm-7 offset-lg-1 col-lg-3 text-center"
             id="lists"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
@@ -64,12 +63,11 @@ const Projects = () => {
               <motion.img
                 src="captcha.png"
                 alt="project1"
-                height={300}
-                width={300}
                 className="img-fluid"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.5 }}
+                style={{ height: "25vh", width: "60vw" }}
               />
             </Link>
             <h3>Captcha Generator</h3>
@@ -81,7 +79,7 @@ const Projects = () => {
             </div>
           </motion.div>
           <motion.div
-            className="offset-1 col-md-3 offset-1 text-center"
+            className="col-8 mt-5 col-sm-7 col-md-5 offset-lg-1 col-lg-3  text-center"
             id="lists"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
@@ -90,12 +88,11 @@ const Projects = () => {
               <motion.img
                 src="ecommerce.png"
                 alt="project1"
-                height={300}
-                width={300}
+                style={{ height: "25vh", width: "60vw" }}
                 className="img-fluid"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
+                transition={{ duration: 0.5 }}  
               />
             </Link>
             <h3>E-commerce</h3>
@@ -106,90 +103,9 @@ const Projects = () => {
               <img src="JavaScript.png" alt="js" />
             </div>
           </motion.div>
-        </div>
-        <div
-          className="row d-flex justify-content-center flex-wrap"
-          style={{ marginTop: "5%", marginBottom: "5%" }}
-        >
+
           <motion.div
-            className="col-md-3 text-center"
-            id="lists"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
-          >
-            <Link to="/ticketbooking">
-              <motion.img
-                src="ticketbooking.png"
-                alt="project1"
-                height={300}
-                width={300}
-                className="img-fluid"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
-              />
-            </Link>
-            <h3>Ticket Booking</h3>
-            <h3>UI / UX</h3>
-            <div className="col-md-12">
-              <img src="figma.png" alt="figma" />
-            </div>
-          </motion.div>
-          <motion.div
-            className="offset-1 col-md-3 text-center"
-            id="lists"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
-          >
-            <Link to="/projectsend">
-              <motion.img
-                src="filesharing.png"
-                alt="project1"
-                height={300}
-                width={300}
-                className="img-fluid"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
-              />
-            </Link>
-            <h3>File Sharing Website</h3>
-            <h3>ProjectSend</h3>
-            <div className="col-md-12">
-              <img src="projectsend.png" alt="html" />
-            </div>
-          </motion.div>
-          <motion.div
-            className="offset-1 col-md-3 offset-1 text-center"
-            id="lists"
-            whileHover={{ scale: 1.05 }}
-            transition={{ duration: 0.3 }}
-          >
-            <Link to="/foodblog">
-              <motion.img
-                src="foodblog.png"
-                alt="project1"
-                height={300}
-                width={300}
-                className="img-fluid"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 0.5 }}
-              />
-            </Link>
-            <h3>Food Blog</h3>
-            <h3>Wordpress</h3>
-            <div className="col-md-12">
-              <img src="WordPress.png" alt="html" />
-            </div>
-          </motion.div>
-        </div>
-        <div
-          className="row d-flex justify-content-center flex-wrap "
-          style={{ marginTop: "5%", marginBottom: "5%" }}
-        >
-          <motion.div
-            className="col-md-3 text-center"
+            className="col-8 mt-5 col-sm-7 offset-md-1 col-md-5 col-lg-3 m-lg-0 mt-lg-5 text-center"
             id="lists"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.5 }}
@@ -198,8 +114,7 @@ const Projects = () => {
               <motion.img
                 src="/weatherapp.png"
                 alt="weatherapp"
-                style={{ height: "280px", borderRadius: "20px" }}
-                width={300}
+                style={{ height: "25vh", width: "60vw", borderRadius: "20px" }}
                 className="img-fluid"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -214,7 +129,7 @@ const Projects = () => {
             </div>
           </motion.div>
           <motion.div
-            className="offset-1 col-md-3 text-center"
+            className="col-8  mt-5 col-sm-7 col-md-5  col-lg-3 offset-lg-1 text-center"
             id="lists"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
@@ -225,7 +140,7 @@ const Projects = () => {
                 alt="xox game"
                 height={300}
                 width={300}
-                style={{ borderRadius: "20px" }}
+                style={{ height: "25vh", width: "60vw", borderRadius: "20px" }}
                 className="img-fluid"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -241,7 +156,7 @@ const Projects = () => {
             </div>
           </motion.div>
           <motion.div
-            className="offset-1 col-md-3 offset-1 text-center"
+            className="col-8  mt-5 col-sm-7  col-md-5 offset-md-1 col-lg-3 offset-lg-1 text-center"
             id="lists"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
@@ -250,7 +165,7 @@ const Projects = () => {
               <motion.img
                 src="appstore.png"
                 alt="appstore"
-                style={{height:"33vh",width:"auto",borderRadius:"20px"}}
+                style={{ height: "25vh", width: "60vw", borderRadius: "20px" }}
                 className="img-fluid"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -269,6 +184,78 @@ const Projects = () => {
                 width={40}
               />
               <img src="Nodejs.png" alt="nodejs" height={50} width={40} />
+            </div>
+          </motion.div>
+
+          <motion.div
+            className="col-8 mt-5 col-sm-7 col-md-5 col-lg-3 text-center"
+            id="lists"
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.5 }}
+          >
+            <Link to="/ticketbooking">
+              <motion.img
+                src="ticketbooking.png"
+                alt="weatherapp"
+                style={{ height: "25vh", width: "60vw", borderRadius: "20px" }}
+                className="img-fluid"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+              />
+            </Link>
+            <h3>Ticket Booking</h3>
+            <h3>UI / UX</h3>
+            <div className="col-md-12">
+              <img src="figma.png" alt="figma" height={60} />
+            </div>
+          </motion.div>
+          <motion.div
+            className="col-8  mt-5 col-sm-7 offset-md-1 col-md-5 offset-lg-1 col-lg-3 text-center"
+            id="lists"
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}
+          >
+            <Link to="/projectsend">
+              <motion.img
+                src="filesharing.png"
+                alt="filesharing"
+                height={300}
+                width={300}
+                style={{ height: "25vh", width: "60vw", borderRadius: "20px" }}
+                className="img-fluid"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+              />
+            </Link>
+            <h3>File Sharing Website</h3>
+            <h3>ProjectSend</h3>
+            <div className="col-md-12">
+              <img src="projectsend.png" alt="projectsend" />
+            </div>
+          </motion.div>
+          <motion.div
+            className="col-8  mt-5 col-md-5 col-sm-7 offset-lg-1 col-lg-3 text-center"
+            id="lists"
+            whileHover={{ scale: 1.05 }}
+            transition={{ duration: 0.3 }}
+          >
+            <Link to="/foodblog">
+              <motion.img
+                src="foodblog.png"
+                alt="foodblog"
+                style={{ height: "25vh", width: "60vw", borderRadius: "20px" }}
+                className="img-fluid"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.5 }}
+              />
+            </Link>
+            <h3>Food Blog</h3>
+            <h3>Wordpress</h3>
+            <div className="col-md-12">
+              <img src="WordPress.png" alt="wordpress" height={50} width={40} />
             </div>
           </motion.div>
         </div>
