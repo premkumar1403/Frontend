@@ -62,7 +62,7 @@ const Home = () => {
             <p>MONGODB</p>
           </motion.div>
           <div
-            className="row col-10 text-left col-sm-3 col-md-4 col-lg-5"
+            className="row col-10 text-left col-sm-12 col-md-12 col-lg-5"
             style={{ position: "absolute", marginTop: "-45%" }}
           >
             <motion.div
@@ -80,7 +80,7 @@ const Home = () => {
             style={{ marginTop: "-40%" }}
           >
             <motion.div
-              className="col-8 text-center col-sm-9 offset-sm-2 col-md-7 m-lg-3"
+              className="col-8 text-center col-sm-12 col-md-12 mb-md-3"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1, duration: 0.5 }}
@@ -104,12 +104,12 @@ const Home = () => {
               <img src="LinkedIn.png" alt="linkedin" />
             </motion.div>
             <motion.div
-              className="col-8 offset-2 col-sm-6 offset-sm-3 col-md-5 offset-lg-8"
+              className="col-8 offset-2 col-sm-12 offset-sm-5 mt-sm-4 col-md-12 m-lg-1 text-lg-center"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 1.5, duration: 3 }}
             >
-              <img src="premphoto.png" alt="prem" style={{heigth:"30vh",width:"30vw"}}/>
+              <img src="premphoto.png" alt="prem" style={{heigth:"15vh",width:"20vw"}}/>
             </motion.div>
           </div>
         </div>
@@ -161,7 +161,7 @@ const Home = () => {
           transition={{ delay: 3, duration: 0.5 }}
         >
           <motion.div
-            className="col-8 mt-5 col-sm-8 col-md-5 col-lg-3 col-xl-4 text-center"
+            className="col-8 mt-5 col-sm-7 col-md-5 col-lg-3 col-xl-3 text-center"
             id="lists"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
@@ -170,7 +170,7 @@ const Home = () => {
               <motion.img
                 src="project1.png"
                 alt="project1"
-                style={{ height: "25vh", width: "60vw" }}
+                style={{ height: "25vh", width: "50vw" }}
                 className="img-fluid mt-2"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
@@ -187,7 +187,7 @@ const Home = () => {
             </div>
           </motion.div>
           <motion.div
-            className="col-8 mt-5 col-sm-8  offset-md-1 col-md-5 col-lg-3 col-xl-4 text-center"
+            className="col-8 mt-5 col-sm-7 col-md-5 offset-md-1 offset-lg-1 col-lg-3 col-xl-3 text-center"
             id="lists"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
@@ -212,7 +212,7 @@ const Home = () => {
             </div>
           </motion.div>
           <motion.div
-            className="col-8 col-sm-8 mt-5 offset-md-1 col-md-5 col-lg-3 col-xl-4 text-center"
+            className="col-8 col-sm-7 mt-5 col-md-5 offset-lg-1 col-lg-3 col-xl-3 text-center"
             id="lists"
             whileHover={{ scale: 1.05 }}
             transition={{ duration: 0.3 }}
