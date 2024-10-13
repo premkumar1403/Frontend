@@ -5,7 +5,7 @@ const Footer = () => {
     const year = new Date();
     let data=year.getFullYear()
   return (
-    <div className="container" id="head">
+    <div className="container mt-5" id="head">
       <div className="text-center">
         <h3 style={{ fontFamily: "bowlby One SC" }}>PREMKUMAR</h3>
         <h5>
