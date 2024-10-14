@@ -4,13 +4,14 @@ import Header from "./Header";
 import Footer from "./Footer";
 import { Link } from "react-router-dom";
 import { IoIosArrowForward } from "react-icons/io";
-import { motion } from 'framer-motion'  
+import { motion } from 'framer-motion' 
+import '../styles/home.css' 
 const Home = () => {
   return (
     <div className="container" id="head">
       <Header />
       <div className="mt-5">
-        <div>
+        <div style={{position:'relative'}}>
           <motion.div
             id="overlay"
             className="blinking-text"
@@ -61,13 +62,13 @@ const Home = () => {
             <p>JAVA SCRIPT</p>
             <p>MONGODB</p>
           </motion.div>
-          <div
+          <div style={{position:'absolute',top:"15%"}}
             className="row col-10 text-left col-sm-12 col-md-12 col-lg-5"
-            style={{ position: "absolute", marginTop: "-45%" }}
+            // style={{ position: "absolute", marginTop: "-45%" }}
           >
             <motion.div
               className="position-relative"
-              style={{ top: "-35%" }}
+              // style={{ top: "-35%" }}
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.5, duration: 2 }}
@@ -75,9 +76,9 @@ const Home = () => {
               <img src="circle.png" alt="circle" style={{heigth:"10vh",width:"20vw"}} />
             </motion.div>
           </div>
-          <div
-            className="d-lg-flex col-lg-6 align-items-lg-center"
-            style={{ marginTop: "-40%" }}
+          <div style={{position:'absolute',top:'25%'}}
+            className="mt-sm-4 d-lg-flex col-lg-6 align-items-lg-center"
+            // style={{ marginTop: "-40%" }}
           >
             <motion.div
               className="col-8 text-center col-sm-12 col-md-12 mb-md-3"

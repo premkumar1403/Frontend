@@ -42,7 +42,8 @@ p{
     letter-spacing: 11px;
     rotate: 5deg;
     opacity: 0.03;
-    margin-top: -40px;
+    top: 0;
+    left: 0;
     padding: 5px;
 
 }

@@ -1,0 +1,20 @@
+#lists{
+    position:relative;
+    background-color: white;
+    color: black;
+    font-family: cursive;
+}
+#lists::after{
+    content: " ";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 20px;
+    filter: blur(40px);
+    padding: 20px;
+    background-image: linear-gradient(blue,transparent 40%,rgb(243, 33, 197));
+    z-index: -1;
+}
+
