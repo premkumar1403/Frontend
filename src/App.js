@@ -13,7 +13,6 @@ import Foodblog from './Components/Foodblog'
 import Weatherapp from './Components/Weatherapp';
 import Xox from './Components/Xox';
 import Appstore from './Components/Appstore';
-
 function App() {
   return (
     <div>
